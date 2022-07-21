@@ -13,3 +13,7 @@ At some point, array becomes object `const j = { a: "joao" }`
 ![image](https://user-images.githubusercontent.com/47106171/180123148-c79fe545-eb6f-4456-8853-de28a155e3de.png)
 
 This approach allows our application to keep running even if a part is broken. As it is possible to catch the error, we can send it to some monitoring and fix it.
+
+# Branch use-memo
+
+working
