@@ -1,14 +1,16 @@
 import React from "react";
 
-const j = {};
+const j = { a: "joao" };
 
 const ListNames = () => {
-  j.map((item) => {
-    console.log(item.a);
-  });
   return (
     <div>
       <h1>ListNames</h1>
+      <ul>
+        {j.map((item, key) => {
+          return <li key={key}>{item.a}</li>;
+        })}
+      </ul>
     </div>
   );
 };
