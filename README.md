@@ -16,4 +16,10 @@ This approach allows our application to keep running even if a part is broken. A
 
 # Branch use-memo
 
-working
+Without useMemo, every parent state update, the Error component is updated
+
+![noUseMemo](https://user-images.githubusercontent.com/47106171/180297664-ae81b277-c393-4f17-b101-f3f771d99a51.gif)
+
+With use memo only the parent component is re-rendered
+
+![useMemo](https://user-images.githubusercontent.com/47106171/180297777-7590ff23-8166-46f4-a1d5-557c2d9c26cf.gif)
