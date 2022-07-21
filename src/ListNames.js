@@ -1,6 +1,6 @@
 import React from "react";
 
-const j = { a: "joao" };
+const j = [{ a: "joao" }];
 
 const ListNames = () => {
   return (

@@ -15,5 +15,3 @@ At some point, array becomes object `const j = { a: "joao" }`
 This approach allows our application to keep running even if a part is broken. As it is possible to catch the error, we can send it to some monitoring and fix it.
 
 # Branch use-memo
-
-working
