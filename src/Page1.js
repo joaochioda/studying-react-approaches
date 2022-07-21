@@ -1,11 +1,14 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import ListNames from "./ListNames";
+import ErrorBoundary from "./ErrorBoundary";
+
 const Page1 = () => {
-  const navigate = useNavigate();
   return (
     <div>
       <h1>Page 1</h1>
-      <button onClick={() => navigate("/page2")}>Go to Page 2</button>
+      <ErrorBoundary>
+        <ListNames />
+      </ErrorBoundary>
     </div>
   );
 };

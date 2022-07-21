@@ -1,21 +1,12 @@
-import React, { lazy, Suspense } from "react";
+import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-const Page1 = lazy(() => import("./Page1"));
-const Page2 = lazy(() => import("./Page2"));
+import Page1 from "./Page1";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Page1 />} />
-        <Route
-          path="/page2"
-          element={
-            <Suspense fallback={<div>Loading...</div>}>
-              <Page2 />
-            </Suspense>
-          }
-        />
       </Routes>
     </BrowserRouter>
   );
